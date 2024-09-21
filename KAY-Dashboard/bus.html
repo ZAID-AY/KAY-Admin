@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KAY - Dashboard</title>
+    <link rel="stylesheet" href="bus.Css" />
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  </head>
+  <body>
+    <div class="container">
+
+        <a href="index.html"><i class="uil uil-arrow-left arrow"></i></a>
+
+      <section class="main">
+        <div class="head">
+            <p class="head_1">Bus<span id="bus-number"> 20</span></p>
+            <select onchange="updateBusNumber()" id="bus-select">
+                <option>Bus actuell</option>
+                <option>20</option>
+                <option>24</option>
+                <option>25</option>
+
+            </select>
+        </div>
+
+        <ul>
+            <li>
+                <i class="icon uil uil-map-marker"></i>      
+                              <div class="progress one">
+                    <p>1</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Terminus</p>
+            </li>
+            <li>
+                <i class="icon uil uil-map-marker"></i>                <div class="progress two">
+                    <p>2</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Station 1</p>
+            </li>
+            <li>
+                <i class="icon uil uil-map-marker"></i>                <div class="progress three">
+                    <p>3</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Station 2</p>
+            </li>
+            <li>
+                <i class="icon uil uil-map-marker"></i>                <div class="progress four">
+                    <p>4</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Station 3</p>
+            </li>
+            <li>
+                <i class="icon uil uil-map-marker"></i>                <div class="progress five">
+                    <p>5</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Terminus</p>
+            </li>
+        </ul>
+
+    </div>
+
+      </section>
+    </div>
+  </body>
+  <script>
+     function updateBusNumber() {
+    var select = document.getElementById("bus-select");
+    var busNumber = document.getElementById("bus-number");
+    busNumber.innerHTML = " " + select.value;
+  }
+  </script>
+</html>

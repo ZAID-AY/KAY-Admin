@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KAY - Dashboard</title>
+    <link rel="stylesheet" href="styling.Css" />
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <img src="../Assets/logo.png" class="logo" />
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Acceuill</span>
+            </a>
+          </li>
+          <li>
+            <a href="bus.html">
+              <i class="fas fa-bus"></i>
+              <span class="nav-item">Bus</span>
+            </a>
+          </li>
+          <li>
+            <a href="clients.html">
+              <i class="fas fa-user"></i>
+              <span class="nav-item">Clients</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="">
+              <i class="fas fa-chart-bar"></i>
+              <span class="nav-item">Chauffeurs</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="logout.php" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="main">
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">0</div>
+              <div class="cardName">Clients</div>
+            </div>
+            <div class="iconBx">
+              <ion-icon name="people-sharp"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">0</div>
+              <div class="cardName">Chauffeurs</div>
+            </div>
+            <div class="iconBx">
+              <ion-icon name="people-sharp"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52493.07473066795!2d-1.9487637543281846!3d34.684563539647776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7864984106d6ef%3A0x1d86b33244c4650!2sOujda!5e0!3m2!1sfr!2sma!4v1687448729205!5m2!1sfr!2sma&iwloc=near"
+            width="1000"
+            height="600"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

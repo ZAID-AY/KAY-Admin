@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clients</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .course-box {
+        margin: 20px;
+        padding: 10px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    
+      .course-box table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+    
+      .course-box th,
+      .course-box td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+    
+      .course-box th {
+        background-color: #f9f9f9;
+        font-weight: bold;
+      }
+    
+      .course-box tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    
+      .course-box tr:hover {
+        background-color: #ddd;
+      }
+    
+      .course-box td:last-child {
+        text-align: center;
+      }
+    
+      .course-box td:last-child:hover {
+        cursor: pointer;
+        background-color: #5967e3;
+      }
+    </style>
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="logo">
+              <i class="fas fa-bus"></i>
+              <span class="nav-item">KAY</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Acceuill</span>
+            </a>
+          </li>
+          <li>
+            <a href="bus.html">
+              <i class="fas fa-bus"></i>
+              <span class="nav-item">Bus</span>
+            </a>
+          </li>
+          <li>
+            <a href="clients.html">
+              <i class="fas fa-user"></i>
+              <span class="nav-item">Clients</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="drivers.html">
+              <i class="fas fa-chart-bar"></i>
+              <span class="nav-item">Chauffeurs</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="logout.php" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="main">
+        <div>
+            <h1></h1>
+        </div>
+
+        <section class="main-course">
+          <h1>Liste des clients</h1>
+        <div class="course-box">
+          <table>
+            <tr>
+                 <th>Nom</th>
+                 <th>Prenom</th>
+                 <th>Telephone</th>
+                 <th>CIN</th>
+                 <th>Ligne</th>
+                 <th>Action</th>
+            </tr>
+            <tr>
+              <td>ZAID</td>
+              <td>Ayoub</td>
+              <td>0629362762</td>
+              <td>BB12ZHI2</td>
+              <td>25 - 20</td>
+              <td>Supprimer</td>
+            </tr>
+            <tr>
+              <td>ZAID</td>
+              <td>Ayoub</td>
+              <td>0629362762</td>
+              <td>BB12ZHI2</td>
+              <td>25 - 20</td>
+              <td>Supprimer</td>
+            </tr>
+            <tr>
+              <td>ZAID</td>
+              <td>Ayoub</td>
+              <td>0629362762</td>
+              <td>BB12ZHI2</td>
+              <td>25 - 20</td>
+              <td>Supprimer</td>
+            </tr>
+        </div>
+        </section>
+      </section>
+    </div>
+  </body>
+
+ 
+</html>
